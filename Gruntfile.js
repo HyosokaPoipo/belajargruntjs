@@ -1,6 +1,5 @@
 module.exports = function(grunt) {
     const sass = require('node-sass');
-    // require('load-grunt-tasks')(grunt);
     // Configuration
     grunt.initConfig({
         // pass in options to plugins
@@ -11,7 +10,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: [{
-                    'css/main.css': 'sass/*.scss'
+                    src: 'sass/styles.scss',
+                    dest: 'css/main.css'
                 }]
             }
         }

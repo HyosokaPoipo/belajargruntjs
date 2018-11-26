@@ -1,0 +1,16 @@
+@mixin vishovact ($link_color, $visit_color, $hover_color, $active_color) {
+    a {
+        color: $link_color;
+        &:visited {
+            color: $visit_color;
+        }
+
+        &:hover {
+            color: $hover_color;
+        }
+
+        &:active {
+            color: $active_color;
+        }
+    }
+}

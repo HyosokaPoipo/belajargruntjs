@@ -1,0 +1,16 @@
+@import 'adimixins';
+
+$base-color: #7FFFD4;
+$second-color: #FF00FF;
+$mybackground: #008B8B;
+
+// Buat satu biji kelas
+.adi-class {
+    width: 100px;
+    height: 80px;
+    background: $mybackground;
+    @include vishovact('blue', 'red', 'yellow', 'green');
+    p {
+        color: $second-color;
+    }
+}
